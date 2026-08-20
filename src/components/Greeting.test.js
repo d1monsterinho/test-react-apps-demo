@@ -27,7 +27,7 @@ describe('Greeting Component', () => {
         expect(textChangedParagraph).toBeNull();
     });
 
-    test('renders "Text Changed!" in a paragraph when text is changed by button', async () => {
+    test('renders "Text Changed!" in a paragraph when text is changed by button', () => {
         render(<Greeting/>);
 
         const buttonElement = screen.getByRole('button');
